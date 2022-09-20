@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" style="padding-top:50px; padding-bottom:50px;">
         <div class="row" id="footer">
             <div class="col" v-for="foot in footer" :key="foot.id" data-aos="fade-down" data-aos-duration="800">
             <img :src="foot.icon_footer" class="rounded mx-auto d-block"  width="70" height="70 " >
@@ -24,18 +24,12 @@ import axios from 'axios';
 
 export default {
 
-    setup() {
-        const carouselSlides = ["qjual_1", "qjual_2", "qjual_3"];
-
-        return { carouselSlides };
-    },
-
     created ( ) {
     AOS.init();
     this.getFooter();
     },
 
-    name: 'FooterList',
+    name: 'Footer List',
     data(){
         return{
         footer:Array,

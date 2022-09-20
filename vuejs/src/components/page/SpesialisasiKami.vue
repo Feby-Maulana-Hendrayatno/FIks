@@ -1,12 +1,12 @@
 <template>
-    <section>
+    <section style="padding-bottom:60px; padding-top:60px; background-color: #F5F5F5;">
     <div class="container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >
     <h1 id="tentang_kami" style=" font-weight: 10; font-size: 40px; line-height: 65px;">
         <span id="spesialisasi">Spesialisasi </span>
         <span style="color:#FF2A2A;">Kami</span>       
     </h1>
     <br>
-    <div class="row mb-3" v-for="ttg in tentangKami" :key="ttg.id">
+    <div class="row" v-for="ttg in tentangKami" :key="ttg.id">
         <div class="col-md-8 themed-grid-col">
             <div class="d-flex text-align-left">
             {{ttg.deskripsi}}
@@ -31,7 +31,7 @@ export default {
         this.getTentangKami();
     },
 
-    name: 'SpesialisasiKami',
+    name: 'Spesialisasi Kami',
     data(){
         return{
         tentangKami:Array,

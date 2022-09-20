@@ -1,7 +1,7 @@
-<template>
-    <section>
+<template >
+    <section style="pading-top:20px; background-color: #F5F5F5;">
         <div class="container">
-            <div class="row mb-4" id="layanan">
+            <div class="row " id="layanan" >
                 <div class="col-md-4 themed-grid-col" v-for="lyn in layanan" :key="lyn.id">
                     <div class="d-flex bd-highlight">
                         <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
@@ -37,18 +37,7 @@ export default {
         this.getLayanan();
     },
 
-
-
-
-
-
-
-
-
-
-    
-
-    name: 'ContactList',
+    name: 'Contact List',
     data(){
         return{
         layanan:Array,

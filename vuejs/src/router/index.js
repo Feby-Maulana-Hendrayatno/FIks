@@ -25,10 +25,25 @@ const routes = [
     component: () => import('../components/page/Proyek.vue')
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: '/footer',
+    name: 'footer',
     component: () => import('../components/page/Footer.vue')
-  }
+  },
+  {
+    path: '/carousel',
+    name: 'carousel',
+    component: () => import('../components/page/Carousel.vue')
+  },
+  {
+    path: '/navbar',
+    name: 'navbar',
+    component: () => import('../components/page/Navbar.vue')
+  },
+  {
+    path: '/tentang_kami',
+    name: 'tentang kami',
+    component: () => import('../components/page/TentangKami.vue')
+  },
 
 
 

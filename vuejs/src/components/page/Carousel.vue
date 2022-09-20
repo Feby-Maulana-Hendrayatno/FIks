@@ -19,9 +19,6 @@
                 <div class="row">
                     <div class="col-8"> &nbsp</div>
                     <div class="col-4"><p>{{cr.deskripsi}}</p></div>
-                    <!-- <div class="col-lg-2">
-                    <p> {{cr.deksripsi}}</p>
-                    </div> -->
                 </div>
                 </div>
                 <p><a :href="cr.link" class="btn btn-lg btn-primary" :style="{'background-color': cr.warna }"> {{cr.nm_link}}</a></p>
@@ -51,7 +48,6 @@
     created ( ) {
         AOS.init();
         this.getCarousel();
-    
     },
 
     name: 'Carousel List',
