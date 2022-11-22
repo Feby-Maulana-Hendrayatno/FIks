@@ -11,9 +11,10 @@ class KategoriSeeder extends Seeder
     /**
      * Run the database seeds.
      *
-     * @return void
+    * @return void
      */
     public function run()
+
     {
         Kategori::create([
             "nama_kategori" => "Website"

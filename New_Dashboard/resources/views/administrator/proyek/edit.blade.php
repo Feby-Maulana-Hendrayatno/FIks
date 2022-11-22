@@ -1,9 +1,9 @@
 <input type="hidden" name="id" value="{{ $edit->id }}">
 @php
     $hapus = trim($edit->foto_proyek, url('/'));
-    $footer = substr($hapus, 8);
+    $proyek = substr($hapus, 8);
 @endphp
-<input type="hidden" name="oldImage" value="{{ $footer }}">
+<input type="hidden" name="oldImage" value="{{ $proyek }}">
 <div class="form-group">
     <label for="Deskripsi"> Nama Produk </label> </label>
     <textarea class="form-control" id="nm_proyek" name="nm_proyek" rows="5" placeholder="Masukkan deskripsi Nama Produk" value="{{ $edit->nm_proyek }}"> {{ $edit->nm_proyek }}</textarea>
@@ -19,7 +19,7 @@
     </select>
 </div>
 <div class="form-group">
-    <input type="hidden" name="foto_proyek" value="{{ $footer }}">
+    <input type="hidden" name="foto_proyek" value="{{ $proyek }}">
     <label for="foto">Foto</label>
     @if ($edit->foto_proyek)
         <img src="{{ $edit->foto_proyek }}" class="img-fluid gambar-preview-new img-fluid mb-3 col-sm-5 d-block"

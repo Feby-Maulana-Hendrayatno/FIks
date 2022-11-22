@@ -4,9 +4,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\HubungiKamiController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProfilPerusahaanController;
