@@ -46,7 +46,7 @@
                                     <img src="{{ url('/gambar/gambar_user.png') }}" class="img-fluid mb-3 gambar-preview"
                                         id="tampilGambar">
                                 @else
-                                    <img src="{{ url('/storage/' .$profil_user->foto) }}" class="img-fluid mb-3 gambar-preview"
+                                    <img src="{{ url('/storage/' .A uth::user()->foto) }}" class="img-fluid mb-3 gambar-preview"
                                         id="tampilGambar">
                                 @endif
                             </center>
