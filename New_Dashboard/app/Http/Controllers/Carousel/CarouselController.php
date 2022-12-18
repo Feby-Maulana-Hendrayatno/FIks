@@ -41,7 +41,7 @@ class CarouselController extends Controller
             "foto" => url("/storage") . "/" . $foto,
             "icon" => url("/storage") . "/" . $icon,
         ]);
-        return redirect("/admin/carousel")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Tambahkan', 'success');</script>"]);
+        return redirect("/admin/carousel")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Carousel Berhasil di Tambahkan', 'success');</script>"]);
     }
 
 
@@ -84,7 +84,7 @@ class CarouselController extends Controller
             "icon" => $icon,
         ]);
 
-        return redirect("/admin/carousel")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Update', 'success');</script>"]);
+        return redirect("/admin/carousel")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Carousel Berhasil di Update', 'success');</script>"]);
     }
 
 
@@ -93,7 +93,7 @@ class CarouselController extends Controller
     public function destroy($id)
     {
         Carousel::where("id", $id)->delete();
-        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Berhasil di Hapus', 'success')</script>");
+        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Carousel Berhasil di Hapus', 'success')</script>");
     }
 
 

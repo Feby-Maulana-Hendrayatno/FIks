@@ -43,7 +43,7 @@ class SpesialisasiKamiController extends Controller
             "deskripsi" => $request->deskripsi,
             "foto" => url("/storage") . "/" . $coba,
         ]);
-        return redirect("/admin/spesialisasi_kami")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Tambahkan', 'success');</script>"]);
+        return redirect("/admin/spesialisasi_kami")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil Spesialisasi di Tambahkan', 'success');</script>"]);
     }
 
     public function edit($id)
@@ -75,7 +75,7 @@ class SpesialisasiKamiController extends Controller
             "foto" => $data,
         ]);
 
-        return redirect("/admin/spesialisasi_kami")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Update', 'success');</script>"]);
+        return redirect("/admin/spesialisasi_kami")->with(["message" => "<script>Swal.fire('Berhasil', 'Data Spesialisasi Berhasil di Update', 'success');</script>"]);
     }
 
 
@@ -84,6 +84,6 @@ class SpesialisasiKamiController extends Controller
     public function destroy($id)
     {
         SpesialisasiKami::where("id", $id)->delete();
-        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Berhasil di Hapus', 'success')</script>");
+        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Spesialisasi Berhasil di Hapus', 'success')</script>");
     }
 }

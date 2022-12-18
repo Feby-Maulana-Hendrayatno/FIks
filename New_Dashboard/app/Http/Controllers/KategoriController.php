@@ -20,7 +20,7 @@ class KategoriController extends Controller
     {
         Kategori::create($request->all());
 
-        return back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Tambahkan', 'success');</script>"]);
+        return back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil Kategori di Tambahkan', 'success');</script>"]);
     }
 
     public function edit(Request $request)
@@ -38,13 +38,13 @@ class KategoriController extends Controller
             "nama_kategori" => $request->nama_kategori
         ]);
 
-        return back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Simpan', 'success');</script>"]);
+        return back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Kategori Berhasil di Simpan', 'success');</script>"]);
     }
 
     public function destroy($id)
     {
         Kategori::where("id", $id)->delete();
 
-        return back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di di Hapus', 'success');</script>"]);
+        return back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Kategori Berhasil di di Hapus', 'success');</script>"]);
     }
 }

@@ -50,7 +50,7 @@
                                         id="tampilGambar">
                                 @endif
                             </center>
-                            {{ Frm::file('foto', ['class' => 'form-control', 'onchange' => 'previewImage()']) }}
+                            {{ Form::file('foto', ['class' => 'form-control', 'onchange' => 'previewImage()']) }}
                         </div>
                         <div class="col-md-8">
                             <div class="form-group">

@@ -21,7 +21,7 @@ class TentangKamiController extends Controller
         TentangKami::create([
             "tentang_km" => $request->tentang_km,
         ]);
-        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Simpan', 'success');</script>"]);
+        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Tentang Kami Berhasil di Tambahkan', 'success');</script>"]);
     }
 
     public function edit(Request $request)
@@ -39,12 +39,12 @@ class TentangKamiController extends Controller
             "tentang_km" => $request->tentang_km
         ]);
 
-        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di update', 'success');</script>"]);
+        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Tentang Kami Berhasil di update', 'success');</script>"]);
     }
 
     public function destroy($id)
     {
         TentangKami::where("id", $id)->delete();
-        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Berhasil di Hapus', 'success')</script>");
+        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Tentang Kami Berhasil di Hapus', 'success')</script>");
     }
 }

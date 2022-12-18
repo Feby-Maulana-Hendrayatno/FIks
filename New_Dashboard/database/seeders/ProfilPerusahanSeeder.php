@@ -19,8 +19,8 @@ class ProfilPerusahanSeeder extends Seeder
             "logo" => "http://127.0.0.1:8000/assets/logo.png",
             "singkatan" => "Jaring",
             "nama" => "PT. JARING SOLUSI",
-            "alamat" => "Jln. Budi Utomo",
-            "no_hp" => "081324237299"
+            "alamat" => "Jl. Pintu Air IV No.25A, RT.11/RW.8, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710",
+            "no_hp" => "087727345567"
         ]);
     }
 }

@@ -31,7 +31,7 @@ class ProyekController extends Controller
             "device" => $request->device,
             "foto_proyek" => url("/storage") . "/" . $coba,
         ]);
-        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Simpan', 'success');</script>"]);
+        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Proyek Berhasil di Simpan', 'success');</script>"]);
     }
 
 
@@ -66,7 +66,7 @@ class ProyekController extends Controller
             "foto_proyek" => $data,
         ]);
 
-        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di update', 'success');</script>"]);
+        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Proyek Berhasil di update', 'success');</script>"]);
     }
 
 
@@ -74,7 +74,7 @@ class ProyekController extends Controller
     public function destroy($id)
     {
         Proyek::where("id", $id)->delete();
-        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Berhasil di Hapus', 'success')</script>");
+        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Proyek Berhasil di Hapus', 'success')</script>");
     }
 
 

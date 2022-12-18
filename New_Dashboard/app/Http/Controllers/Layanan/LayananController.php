@@ -28,7 +28,7 @@ class LayananController extends Controller
             "deskripsi_lyn" => $request->deskripsi_lyn,
             "icon_lyn" =>  url("/storage") . "/" . $coba,
         ]);
-        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di Simpan', 'success');</script>"]);
+        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Layanan Berhasil di Simpan', 'success');</script>"]);
     }
 
     public function edit(Request $request)
@@ -59,12 +59,12 @@ class LayananController extends Controller
             "icon_lyn" => $data,
         ]);
 
-        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Berhasil di update', 'success');</script>"]);
+        return redirect()->back()->with(["message" => "<script>Swal.fire('Berhasil', 'Data Layanan Berhasil di update', 'success');</script>"]);
     }
 
     public function destroy($id)
     {
         Layanan::where("id", $id)->delete();
-        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Berhasil di Hapus', 'success')</script>");
+        return back()->with("message", "<script>Swal.fire('Berhasil', 'Data Layanan Berhasil di Hapus', 'success')</script>");
     }
 }

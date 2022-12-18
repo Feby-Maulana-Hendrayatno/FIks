@@ -19,6 +19,15 @@ class UserSeeder extends Seeder
             "nama" => "Alan",
             "email" => "alan@gmail.com",
             "password" => bcrypt("alan"),
+            'foto' => 'http://127.0.0.1:8000/gambar/gambar_user.png',
+            "created_by" => 0
+        ]);
+
+        User::create([
+            "nama" => "Feby",
+            "email" => "Feby@gmail.com",
+            "password" => bcrypt("Feby"),
+            'foto' => 'http://127.0.0.1:8000/gambar/gambar_user.png',
             "created_by" => 0
         ]);
     }

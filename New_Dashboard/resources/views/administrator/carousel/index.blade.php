@@ -81,7 +81,7 @@
                                                 class="btn btn-warning btn-rounded btn-sm">
                                                 <i class="fa fa-edit"></i> Edit
                                             </a>
-                                            <button id="deleteSpesialisasiKami" data-id="{{ $data->id }}"
+                                            <button id="deleteCarousel" data-id="{{ $data->id }}"
                                                 class="btn btn-danger btn-rounded btn-sm">
                                                 <i class="fa fa-trash"></i> Hapus
                                             </button>
@@ -101,7 +101,7 @@
 @section('app_js')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('body').on('click', '#deleteSpesialisasiKami', function() {
+            $('body').on('click', '#deleteCarousel', function() {
                 let id = $(this).data('id');
 
                 Swal.fire({
